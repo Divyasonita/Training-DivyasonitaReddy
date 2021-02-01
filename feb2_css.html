@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid rgb(8, 5, 19);
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+        table {
+            width: 100%;
+            border-radius: 5px;
+            align-content: center;
+            border-style: hidden;
+            box-shadow: 0 0 0 1px rgb(7, 5, 10);
+        }
+        
+        td {
+            height: 10px;
+        }
+        
+        #borderradius {
+            border-radius: 5%;
+            border: 2px solid rgb(14, 6, 19);
+            border-radius: 2%;
+            padding: 6px;
+        }
+        
+        .bold {
+            font-weight: bolder;
+        }
+        
+        h1 {
+            text-align: left;
+        }
+        
+        .container {
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+        
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        body {
+            padding-left: 11em;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: purple;
+            background-color: #d8da3d;
+        }
+        
+        ul.navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 2em;
+            left: 1em;
+            width: 9em;
+        }
+        
+        h1 {
+            font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+        }
+        
+        ul.navbar li {
+            background: white;
+            margin: 0.5em 0;
+            padding: 0.3em;
+            border-right: 1em solid black;
+        }
+        
+        ul.navbar a {
+            text-decoration: none;
+        }
+        
+        a:link {
+            color: blue;
+        }
+        
+        a:visited {
+            color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li><a href="index.html">Home page</a>
+            <li><a href="about.html">management</a>
+                <li><a href="tax.html">tax</a>
+                    <li><a href="extra.html">incentives</a>
+    </ul>
+
+
+    <h1>salary sheet</h1>
+
+    <p>employee page!</p>
+
+
+    <div class="container">
+        <div class="center">
+            <center>
+
+                <body style=" background-color:grey;">
+
+                    <h1>Invoice</h1>
+                    <div id="borderradius">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Month/Quantity</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>titan</td>
+                                    <td>www.titan.com</td>
+                                    <td>10 hours</td>
+                                    <td>$10</td>
+                                </tr>
+                                <tr>
+
+                                    <td colspan="4"></td>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td class="bold">Total</td>
+                                    <td class="bold">$10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        </div>
+    </div>
+
+
+
+    </body>
+
+</html>
