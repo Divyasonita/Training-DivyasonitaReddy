@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 2px solid rgb(8, 5, 19);
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+        body {
+            background-color: lawngreen;
+        }
+        
+        table {
+            width: 100%;
+            border-radius: 5px;
+            align-content: center;
+            border-style: hidden;
+            box-shadow: 0 0 0 1px rgb(7, 5, 10);
+        }
+        
+        td {
+            height: 10px;
+        }
+        
+        #borderradius {
+            border-radius: 5%;
+            border: 2px solid rgb(14, 6, 19);
+            border-radius: 2%;
+            padding: 6px;
+        }
+        
+        .bold {
+            font-weight: bolder;
+        }
+        
+        h1 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-container">
+        <div>chrome</div>
+        <div>firefox</div>
+        <div>explorer</div>
+        <div>web</div>
+
+    </div>
+    <h1>Invoice</h1>
+    <div id="borderradius">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Month/Quantity</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TommyHelFigur</td>
+                    <td>www.TommyHelfigar.com</td>
+                    <td>2 pairs</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+
+                    <td colspan="4"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td class="bold">Total</td>
+                    <td class="bold">$50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
