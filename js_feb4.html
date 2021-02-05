@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <title>My Web</title>
+</head>
+
+<body>
+    <p style="text-align: center;background-color: burlywood;font-size: x-large;">welcome to java script</p>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Datatypes</a></li>
+        <li role="presentation"><a href="#">Methods</a></li>
+        <li role="presentation"><a href="#">Objects</a></li>
+        <li role="presentation"><a href="#">Arrays</a></li>
+    </ul>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> Try editor </a>
+            </div>
+        </div>
+    </nav>
+
+    <button class="btn btn-warning" type="button">
+        Errors <span class="badge">4</span>
+    </button>
+
+    <div class="alert alert-danger" role="alert"> Type corect programming language</div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Data types</h3>
+                    <p>var length = 16; // Number
+                        var lastName = "Johnson"; // String
+                        var x = {firstName:"John", lastName:"Doe"}; // Object</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">previous </a>
+                        <a href="#" class="btn btn-default" role="button">next</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Methods</h3>
+                    <p>There are 3 methods for extracting a part of a string:
+
+                        slice(start, end)
+                        substring(start, end)
+                        substr(start, length)
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">previous</a>
+                        <a href="#" class="btn btn-default" role="button">next</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>objects</h3>
+                    <p>car.name = Fiat
+
+                        car.model = 500
+
+                        car.weight = 850kg
+
+                        car.color = white
+                        car.start()
+
+                        car.drive()
+
+                        car.brake()
+
+                        car.stop()
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">previous</a>
+                        <a href="#" class="btn btn-default" role="button">next</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Arrays</h3>
+                    <p>var array_name = [item1, item2, ...];
+                        var cars = [
+                        "Saab",
+                        "Volvo",
+                        "BMW"
+                        ];
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">previous</a>
+                        <a href="#" class="btn btn-default" role="button">next</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>JavaScript Data Types</h2>
+
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="demo"></p>
+
+<script>
+var x;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = "Janu";      // Now x is a String
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+<script>
+var answer1 = "It's alright";             // Single quote inside double quotes
+var answer2 = "He is called 'Chinna'";    // Single quotes inside double quotes
+var answer3 = 'She is called "Divya"';    // Double quotes inside single quotes
+console.log(answer1)
+console.log(answer2)
+console.log(answer3)
+</script>
+</html>
