@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title> JavaScript Tutorial</title>
+    <style>
+        body>table {
+            width: 80%;
+        }
+        
+        table {
+            background-color: rgb(158, 91, 91);
+            border-collapse: collapse;
+        }
+        
+        table.list {
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even),
+        table.list thead>tr {
+            background-color: #dddddd;
+        }
+        
+        input[type=text],
+        input[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 30%;
+            background-color: #ddd;
+            color: #000;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        form div.form-action-buttons {
+            text-align: right;
+        }
+        
+        a {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #0000ee;
+            margin-right: 4px;
+        }
+        
+        label.validation-error {
+            color: red;
+            margin-left: 5px;
+        }
+        
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center; font-size: x-large; color: rgb(236, 231, 231); background-color: brown;">Demo using Bootstrap css framework with java script data types</p>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="#">JavaScript</a></li>
+        <li role="presentation" class="active"><a href="#">Java</a></li>
+        <li role="presentation"><a href="#">Html</a></li>
+        <li role="presentation"><a href="#">CSS</a></li>
+    </ul>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Page1 </a>
+            </div>
+        </div>
+    </nav>
+
+    <button class="btn btn-warning" type="button">
+      Quries <span class="badge">4</span>
+    </button>
+
+    <div class="alert alert-danger" role="alert">choose right language</div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption" style="background-color: cornflowerblue;">
+                    <h3>JavaScript Objects</h3>
+                    <p>A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc. JavaScript is an object-based language. Everything is an object in JavaScript. JavaScript
+                        is template based not class based. Here, we don't create class to get the object. But, we direct create objects.</p>
+                    <b>Output</b><br>
+                    <br>
+                    <script>
+                        function emp(id, name, salary) {
+                            this.id = id;
+                            this.name = name;
+                            this.salary = salary;
+
+                            this.changeSalary = changeSalary;
+
+                            function changeSalary(otherSalary) {
+                                this.salary = otherSalary;
+                            }
+                        }
+                        e = new emp(103, "Sonoo Jaiswal", 30000);
+                        document.write(e.id + " " + e.name + " " + e.salary);
+                        e.changeSalary(45000);
+                        document.write("<br>" + e.id + " " + e.name + " " + e.salary);
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption" style="background-color: darkgray;">
+                    <h3>JavaScript Array</h3>
+                    <p>JavaScript array is an object that represents a collection of similar type of elements. There are 3 ways to construct array in JavaScript By array literal By creating instance of Array directly (using new keyword) By using an Array
+                        constructor (using new keyword)</p>
+                    <b>OutPut</b><br>
+                    <script>
+                        var i;
+                        var emp = new Array();
+                        emp[0] = "Divya";
+                        emp[1] = "Reddy";
+                        emp[2] = "Janu";
+
+                        for (i = 0; i < emp.length; i++) {
+                            document.write(emp[i] + "<br>");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+
+                <div class="caption" style="background-color: darkgray;">
+                    <h3>Javascript - innerHTML</h3>
+                    <p>The innerHTML property can be used to write the dynamic html on the html document. It is used mostly in the web pages to generate the dynamic html such as registration form, comment form, links etc.
+                    </p>
+                    <b>OutPut</b><br>
+                    <script type="text/javascript">
+                        function showcommentform() {
+                            var data = "Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'>";
+
+                            document.getElementById('mylocation').innerHTML = data;
+                        }
+                    </script>
+                    <form name="myForm">
+                        <input type="button" value="comment" onclick="showcommentform()">
+                        <div id="mylocation"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <div class="thumbnail">
+
+                <div class="caption" style="background-color: darkgray;">
+                    <h3>Curd Operations</h3><br>
+                    <table>
+                        <tr>
+                            <td>
+                                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                    <div>
+                                        <label>College Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                        <input type="text" name="fullName" id="fullName">
+                                    </div>
+                                    <div>
+                                        <label>College Code</label>
+                                        <input type="text" name="clgCode" id="clgCode">
+                                    </div>
+                                    <div>
+                                        <label>Fees</label>
+                                        <input type="text" name="fee" id="fee">
+                                    </div>
+                                    <div>
+                                        <label>City</label>
+                                        <input type="text" name="city" id="city">
+                                    </div>
+                                    <div class="form-action-buttons">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </td>
+                            <td>
+                                <table class="list" id="collegeslist">
+                                    <h1 style="color: black; text-align: center;">Colleges List</h1>
+                                    <thead>
+                                        <tr>
+                                            <th>College Name</th>
+                                            <th>College Code</th>
+                                            <th>Fees</th>
+                                            <th>City</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <script>
+                        var selectedRow = null
+
+                        function onFormSubmit() {
+                            if (validate()) {
+                                var formData = readFormData();
+                                if (selectedRow == null)
+                                    insertNewRecord(formData);
+                                else
+                                    updateRecord(formData);
+                                resetForm();
+                            }
+                        }
+
+                        function readFormData() {
+                            var formData = {};
+                            formData["fullName"] = document.getElementById("fullName").value;
+                            formData["clgCode"] = document.getElementById("clgCode").value;
+                            formData["fee"] = document.getElementById("fee").value;
+                            formData["city"] = document.getElementById("city").value;
+                            return formData;
+                        }
+
+                        function insertNewRecord(data) {
+                            var table = document.getElementById("collegeslist").getElementsByTagName('tbody')[0];
+                            var newRow = table.insertRow(table.length);
+                            cell1 = newRow.insertCell(0);
+                            cell1.innerHTML = data.fullName;
+                            cell2 = newRow.insertCell(1);
+                            cell2.innerHTML = data.clgCode;
+                            cell3 = newRow.insertCell(2);
+                            cell3.innerHTML = data.fee;
+                            cell4 = newRow.insertCell(3);
+                            cell4.innerHTML = data.city;
+                            cell4 = newRow.insertCell(4);
+                            cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>`;
+                            cell5 = newRow.insertCell(5);
+                            cell5.innerHTML = ' <a onClick="onDelete(this)">Delete</a>';
+                        }
+
+                        function resetForm() {
+                            document.getElementById("fullName").value = "";
+                            document.getElementById("clgCode").value = "";
+                            document.getElementById("fee").value = "";
+                            document.getElementById("city").value = "";
+                            selectedRow = null;
+                        }
+
+                        function onEdit(td) {
+                            selectedRow = td.parentElement.parentElement;
+                            document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
+                            document.getElementById("clgCode").value = selectedRow.cells[1].innerHTML;
+                            document.getElementById("fee").value = selectedRow.cells[2].innerHTML;
+                            document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+                        }
+
+                        function updateRecord(formData) {
+                            selectedRow.cells[0].innerHTML = formData.fullName;
+                            selectedRow.cells[1].innerHTML = formData.clgCode;
+                            selectedRow.cells[2].innerHTML = formData.fee;
+                            selectedRow.cells[3].innerHTML = formData.city;
+                        }
+
+                        function onDelete(td) {
+                            if (confirm('Check before delete this record ?')) {
+                                row = td.parentElement.parentElement;
+                                document.getElementById("collegeslist").deleteRow(row.rowIndex);
+                                resetForm();
+                            }
+                        }
+
+                        function validate() {
+                            isValid = true;
+                            if (document.getElementById("fullName").value == "") {
+                                isValid = false;
+                                document.getElementById("fullNameValidationError").classList.remove("hide");
+                            } else {
+                                isValid = true;
+                                if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
+                                    document.getElementById("fullNameValidationError").classList.add("hide");
+                            }
+                            return isValid;
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
