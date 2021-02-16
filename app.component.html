@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Employee Details</p>
+    <form>
+        <label>Name</label><br><br>
+
+        <input type="text" [(ngModel)]="empname" name="empname" /><br><br>
+
+        <label>Age</label><br><br>
+
+        <input type="text" [(ngModel)]="empage" name="empage" /><br><br>
+
+        <label>Roles.</label><br><br>
+
+        <input type="text" [(ngModel)]="emproles" name="emproles" /><br><br>
+
+        <input type="button" value="Save" (click)="addEmployee()" />
+
+    </form><br><br>
+
+
+    <table border="2" bordercolor="black">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Roles</th>
+            <th>Access</th>
+            <th>Access Colour</th>
+        </tr>
+        <tr *ngFor="let emp of employees" [ngSwitch]="emp.roles">
+
+            <td class="dev" *ngSwitchCase="'Developer'">
+                <span>{{emp.id}}</span>
+            </td>
+            <td class="dev" *ngSwitchCase="'Developer'">
+                <span>{{emp.name}}</span>
+            </td>
+            <td class="dev" *ngSwitchCase="'Developer'">
+                <span>{{emp.age}}</span>
+            </td>
+            <td class="dev" *ngSwitchCase="'Developer'">
+                <span>{{emp.roles}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin'">
+                <span>{{emp.id}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin'">
+                <span>{{emp.name}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin'">
+                <span>{{emp.age}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin'">
+                <span>{{emp.roles}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin,HR'">
+                <span>{{emp.id}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin,HR'">
+                <span>{{emp.name}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin,HR'">
+                <span>{{emp.age}}</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin,HR'">
+                <span>{{emp.roles}}</span>
+            </td>
+            <td class="hr" *ngSwitchCase="'HR'">
+                <span>{{emp.id}}</span>
+            </td>
+            <td class="hr" *ngSwitchCase="'HR'">
+                <span>{{emp.name}}</span>
+            </td>
+            <td class="hr" *ngSwitchCase="'HR'">
+                <span>{{emp.age}}</span>
+            </td>
+            <td class="hr" *ngSwitchCase="'HR'">
+                <span>{{emp.roles}}</span>
+            </td>
+
+            <td class="dev" *ngSwitchCase="'Developer'">
+                <span>General Access</span>
+            </td>
+            <td class="hr" *ngSwitchCase="'HR'">
+                <span>HR Access</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin'">
+                <span>Admin Access</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin,HR'">
+                <span>All Access</span>
+            </td>
+            <td class="dev" *ngSwitchCase="'Developer'">
+                <span>Yellow</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin'">
+                <span>Green</span>
+            </td>
+            <td class="hr" *ngSwitchCase="'HR'">
+                <span>Red</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'Admin,HR'">
+                <span>Green</span>
+            </td>
+            <td class="admin" *ngSwitchCase="'HR,Admin'">
+                <span>Green</span>
+            </td>
+
+        </tr>
+    </table>
+</body>
+
+</html>

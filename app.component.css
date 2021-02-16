@@ -1,0 +1,17 @@
+.hr {
+    color: red;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.dev {
+    color: rgb(255, 208, 0);
+    background-color: grey;
+    font-weight: bold;
+}
+
+.admin {
+    color: green;
+    background-color: grey;
+    font-weight: bold;
+}
