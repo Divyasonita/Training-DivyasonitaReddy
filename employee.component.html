@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter Eno <input type="number" [(ngModel)]="Eno"><br>
+Enter Ename <input type="string" [(ngModel)]="Ename"><br>
+Enter BSalary <input type="number" [(ngModel)]="BSalary"><br>
+<input type="button" (click)="Display()" value="Display"><br>
+<span>Da is: {{Da}} </span><br>
+<span>Hra is: {{Hra}} </span><br>
+<span>Tsal is: {{Tsal}} </span><br>
+<router-outlet></router-outlet>
+
+    </body>
+</html>

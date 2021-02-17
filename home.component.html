@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter Sno <input type="number" [(ngModel)]="Sno"><br>
+Enter M1 <input type="number" [(ngModel)]="M1"><br>
+Enter M2 <input type="number" [(ngModel)]="M2"><br>
+Enter M3 <input type="number" [(ngModel)]="M3"><br>
+<input type="button" (click)="Display()" value="Display"><br>
+<span>Total is: {{Total}} </span><br>
+<span>Percentage is: {{Percentage}} </span><br>
+<router-outlet></router-outlet>
+
+    </body>
+</html>
